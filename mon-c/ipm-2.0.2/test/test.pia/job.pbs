@@ -1,0 +1,34 @@
+# The name of the script is myjob
+#PBS -N myjob 
+
+# Only 1 hour wall-clock time will be given to this job
+#PBS -l walltime=0:05:00
+
+# Number of cores to be allocated is 288.
+# always ask for complete nodes (i.e. mppwidth should normally
+# be a multiple of 24)
+#PBS -l mppwidth=24
+
+#PBS -e error_file.$PBS_JOBID.ipm.e
+#PBS -o output_file.$PBS_JOBID.ipm.o
+
+# Change to the work directory
+cd $PBS_O_WORKDIR
+. /opt/modules/default/etc/modules.sh
+module swap PrgEnv-pgi PrgEnv-intel
+module add papi
+
+#export CRAY_ROOTFS=DSL
+#export LD_LIBRARY_PATH=/pdc/vol/libunwind/1.0/lib:$LD_LIBRARY_PATH
+#export LD_PRELOAD=/cfs/klemming/nobackup/x/xaguilar/VPA2/ipm-flow2/ipm/src/libipm.so
+#export LD_PRELOAD=/cfs/klemming/nobackup/x/xaguilar/ipm_introspection/beta/src/.libs
+
+
+#export IPM_LOG=none
+#export IPM_REPORT=full
+export IPM_HPM="PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_FP_OPS,PAPI_L2_DCM" #,PAPI_RES_STL" 
+#export SAMPLING_TIME=100000
+# Run the executable named myexe 
+# and write the output into my_output_file
+
+aprun -n 2 ./pia_test

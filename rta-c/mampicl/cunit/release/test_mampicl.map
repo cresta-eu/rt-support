@@ -1,0 +1,567 @@
+# Path: release/test_mampicl
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] release/src/cunit_main.mpi.o
+[  2] release/src/cunit_mode.mpi.o
+[  3] release/src/test_mampicl.mpi.o
+[  4] release/src/suite_a2a.mpi.o
+[  5] release/src/suite_mpincoll.mpi.o
+[  6] release/src/suite_mpitopo.mpi.o
+[  7] ../crystal/release/libcrystal.a(crbuffer.o)
+[  8] ../crystal/release/libcrystal.a(cr_gather.mpi.o)
+[  9] ../crystal/release/libcrystal.a(cr_general.mpi.o)
+[ 10] ../crystal/release/libcrystal.a(cr_message.o)
+[ 11] ../crystal/release/libcrystal.a(crystal_router.mpi.o)
+[ 12] ../commprim/release/libcommprim.a(commcontext.mpi.o)
+[ 13] ../commprim/release/libcommprim.a(cshift.mpi.o)
+[ 14] ../commprim/release/libcommprim.a(cread.mpi.o)
+[ 15] ../commprim/release/libcommprim.a(cwrite.mpi.o)
+[ 16] /Users/michs/devel/usr/local/gcc/4.7/lib/libcunit.dylib
+[ 17] /Users/michs/devel/usr/local/mpich3/3.1/gcc/4.7/lib/libmpi.dylib
+[ 18] /usr/lib/libSystem.dylib
+# Sections:
+# Address	Size    	Segment	Section
+0x100000C60	0x00006BA0	__TEXT	__text
+0x100007800	0x0000000C	__TEXT	__text_startup
+0x10000780C	0x00000180	__TEXT	__stubs
+0x10000798C	0x00000290	__TEXT	__stub_helper
+0x100007C20	0x00000D7E	__TEXT	__cstring
+0x1000089A0	0x0000008D	__TEXT	__const
+0x100008A30	0x000015C8	__TEXT	__eh_frame
+0x10000A000	0x00000040	__DATA	__got
+0x10000A040	0x00000010	__DATA	__nl_symbol_ptr
+0x10000A050	0x00000200	__DATA	__la_symbol_ptr
+0x10000A260	0x00000190	__DATA	__data
+0x10000A3F0	0x00000098	__DATA	__bss4
+0x10000A4A0	0x00000560	__DATA	__bss5
+0x10000AA00	0x0000000C	__DATA	__bss2
+0x10000AA10	0x00000008	__DATA	__common
+# Symbols:
+# Address	Size    	File  Name
+0x100000C60	0x0000006D	[  1] _cunit_main
+0x100000CD0	0x00000020	[  2] _basic_all_tests_complete_message_handler
+0x100000CF0	0x00000570	[  2] _basic_test_complete_message_handler
+0x100001260	0x00000190	[  2] _basic_test_start_message_handler
+0x1000013F0	0x00000140	[  2] _CU_mpi_run_tests
+0x100001530	0x00000120	[  2] _CU_basic_run_suite
+0x100001650	0x00000160	[  2] _CU_basic_run_test
+0x1000017B0	0x00000010	[  2] _CU_mpi_set_mode
+0x1000017C0	0x00000010	[  2] _CU_mpi_get_mode
+0x1000017D0	0x00000075	[  2] _CU_basic_show_failures
+0x100001850	0x00000010	[  4] _test_cr_alltoall
+0x100001860	0x000003B0	[  4] _test_alltoallv_in_place_impl
+0x100001C10	0x00000010	[  4] _test_mpi_alltoallv_in_place
+0x100001C20	0x00000010	[  4] _test_cr_alltoallv2_in_place
+0x100001C30	0x00000010	[  4] _test_cr_alltoallv_in_place
+0x100001C40	0x00000320	[  4] _test_alltoallv_impl
+0x100001F60	0x00000010	[  4] _test_mpi_alltoallv
+0x100001F70	0x00000010	[  4] _test_cr_alltoallv2
+0x100001F80	0x00000010	[  4] _test_cr_alltoallv
+0x100001F90	0x000001A0	[  4] _test_mpi_alltoall
+0x100002130	0x00000040	[  4] _init_suite_mpi_coll
+0x100002170	0x00000003	[  4] _cleanup_suite_mpi_coll
+0x100002180	0x00000450	[  5] _test_michs_neighbor_alltoallv
+0x1000025D0	0x00000EE0	[  5] _test_mpi_neighbor_collectives
+0x1000034B0	0x00000030	[  5] _init_suite_mpi_neighbor_coll
+0x1000034E0	0x00000003	[  5] _cleanup_suite_mpi_neighbor_coll
+0x1000034F0	0x00000860	[  6] _verify_comm
+0x100003D50	0x00001680	[  6] _test_mpi_dist_graph_create
+0x1000053D0	0x000002C0	[  6] _validate_dgraph.part.0
+0x100005690	0x000002F0	[  6] _test_mpi_dist_graph_unweighted
+0x100005980	0x00000030	[  6] _init_suite_mpi_topo
+0x1000059B0	0x00000003	[  6] _cleanup_suite_mpi_topo
+0x1000059C0	0x00000060	[  7] _init_cr_buf
+0x100005A20	0x00000020	[  7] _sub_buffer
+0x100005A40	0x00000060	[  7] _add_to_buffer
+0x100005AA0	0x00000070	[  7] _rescue_buf
+0x100005B10	0x000000B0	[  7] _compress
+0x100005BC0	0x00000310	[  7] _check_buffer
+0x100005ED0	0x00000120	[  7] _get_message
+0x100005FF0	0x000000B0	[  7] _send_message
+0x1000060A0	0x00000080	[  7] _print_buffer
+0x100006120	0x00000020	[  7] _crb_data_len
+0x100006140	0x00000020	[  7] _crb_data
+0x100006160	0x00000020	[  7] _crb_clear
+0x100006180	0x00000100	[  7] _crb_resize
+0x100006280	0x00000010	[  7] _crb_create_msg
+0x100006290	0x00000020	[  7] _crb_close_msg
+0x1000062B0	0x00000010	[  7] _crb_add_recipient
+0x1000062C0	0x00000030	[  7] _crb_add_recipients
+0x1000062F0	0x00000013	[  7] _crb_add_msgcontent
+0x100006310	0x00000130	[  8] _read_msg_func
+0x100006440	0x00000050	[  8] _write_msg_func
+0x100006490	0x000001F0	[  8] _Cr_Alltoallv
+0x100006680	0x00000210	[  8] _Cr_Alltoallv2
+0x100006890	0x00000022	[  9] _Cr_Init
+0x1000068C0	0x00000240	[ 10] _message_string
+0x100006B00	0x00000040	[ 10] _cr_msg_header
+0x100006B40	0x00000047	[ 10] _cr_msg_len
+0x100006B90	0x000000D0	[ 11] _write_msg_func
+0x100006C60	0x00000530	[ 11] _crystal_router
+0x100007190	0x000000B0	[ 11] _new_crystal_router
+0x100007240	0x00000040	[ 11] _del_crystal_router
+0x100007280	0x00000023	[ 11] _crb_buffer
+0x1000072B0	0x00000010	[ 12] _commcntxt_size
+0x1000072C0	0x00000010	[ 12] _commcntxt_id
+0x1000072D0	0x00000080	[ 12] _mcMPICommContext
+0x100007350	0x00000012	[ 12] _delMPICommContext
+0x100007370	0x000000E0	[ 13] _cshift
+0x100007450	0x000000AC	[ 13] _cishift
+0x100007500	0x00000100	[ 14] _cread
+0x100007600	0x000000C7	[ 14] _ciread
+0x1000076D0	0x000000A0	[ 15] _cwrite
+0x100007770	0x00000090	[ 15] _ciwrite
+0x100007800	0x0000000C	[  3] _main
+0x10000780C	0x00000006	[ 16] _CU_assertImplementation
+0x100007812	0x00000006	[ 16] _CU_cleanup_registry
+0x100007818	0x00000006	[ 16] _CU_get_error
+0x10000781E	0x00000006	[ 16] _CU_get_registry
+0x100007824	0x00000006	[ 16] _CU_initialize_registry
+0x10000782A	0x00000006	[ 16] _CU_register_suites
+0x100007830	0x00000006	[ 16] _CU_run_all_tests
+0x100007836	0x00000006	[ 16] _CU_run_suite
+0x10000783C	0x00000006	[ 16] _CU_run_test
+0x100007842	0x00000006	[ 16] _CU_set_all_test_complete_handler
+0x100007848	0x00000006	[ 16] _CU_set_error
+0x10000784E	0x00000006	[ 16] _CU_set_test_complete_handler
+0x100007854	0x00000006	[ 16] _CU_set_test_start_handler
+0x10000785A	0x00000006	[ 17] _MPI_Abort
+0x100007860	0x00000006	[ 17] _MPI_Alltoall
+0x100007866	0x00000006	[ 17] _MPI_Barrier
+0x10000786C	0x00000006	[ 17] _MPI_Bcast
+0x100007872	0x00000006	[ 17] _MPI_Cart_create
+0x100007878	0x00000006	[ 17] _MPI_Comm_dup
+0x10000787E	0x00000006	[ 17] _MPI_Comm_free
+0x100007884	0x00000006	[ 17] _MPI_Comm_rank
+0x10000788A	0x00000006	[ 17] _MPI_Comm_size
+0x100007890	0x00000006	[ 17] _MPI_Dist_graph_create
+0x100007896	0x00000006	[ 17] _MPI_Dist_graph_create_adjacent
+0x10000789C	0x00000006	[ 17] _MPI_Dist_graph_neighbors
+0x1000078A2	0x00000006	[ 17] _MPI_Dist_graph_neighbors_count
+0x1000078A8	0x00000006	[ 17] _MPI_Finalize
+0x1000078AE	0x00000006	[ 17] _MPI_Gather
+0x1000078B4	0x00000006	[ 17] _MPI_Get_count
+0x1000078BA	0x00000006	[ 17] _MPI_Init
+0x1000078C0	0x00000006	[ 17] _MPI_Irecv
+0x1000078C6	0x00000006	[ 17] _MPI_Isend
+0x1000078CC	0x00000006	[ 17] _MPI_Neighbor_allgather
+0x1000078D2	0x00000006	[ 17] _MPI_Neighbor_allgatherv
+0x1000078D8	0x00000006	[ 17] _MPI_Neighbor_alltoall
+0x1000078DE	0x00000006	[ 17] _MPI_Neighbor_alltoallv
+0x1000078E4	0x00000006	[ 17] _MPI_Neighbor_alltoallw
+0x1000078EA	0x00000006	[ 17] _MPI_Recv
+0x1000078F0	0x00000006	[ 17] _MPI_Reduce
+0x1000078F6	0x00000006	[ 17] _MPI_Send
+0x1000078FC	0x00000006	[ 17] _MPI_Topo_test
+0x100007902	0x00000006	[ 17] _MPI_Type_size
+0x100007908	0x00000006	[ 17] _MPI_Waitall
+0x10000790E	0x00000006	[ 18] ___assert_rtn
+0x100007914	0x00000006	[ 18] ___sprintf_chk
+0x10000791A	0x00000006	[ 18] ___strcat_chk
+0x100007920	0x00000006	[ 18] _fprintf
+0x100007926	0x00000006	[ 18] _fputs
+0x10000792C	0x00000006	[ 18] _free
+0x100007932	0x00000006	[ 18] _fwrite
+0x100007938	0x00000006	[ 18] _malloc
+0x10000793E	0x00000006	[ 18] _memcmp
+0x100007944	0x00000006	[ 18] _memcpy
+0x10000794A	0x00000006	[ 18] _memmove
+0x100007950	0x00000006	[ 18] _memset
+0x100007956	0x00000006	[ 18] _posix_memalign
+0x10000795C	0x00000006	[ 18] _printf
+0x100007962	0x00000006	[ 18] _putchar
+0x100007968	0x00000006	[ 18] _puts
+0x10000796E	0x00000006	[ 18] _rand
+0x100007974	0x00000006	[ 18] _setvbuf
+0x10000797A	0x00000006	[ 18] _srand
+0x100007980	0x00000006	[ 18] _strncpy
+0x100007986	0x00000006	[ 18] _sysconf
+0x10000798C	0x00000010	[  0] helper helper
+0x10000799C	0x0000000A	[ 16] _CU_assertImplementation
+0x1000079A6	0x0000000A	[ 16] _CU_cleanup_registry
+0x1000079B0	0x0000000A	[ 16] _CU_get_error
+0x1000079BA	0x0000000A	[ 16] _CU_get_registry
+0x1000079C4	0x0000000A	[ 16] _CU_initialize_registry
+0x1000079CE	0x0000000A	[ 16] _CU_register_suites
+0x1000079D8	0x0000000A	[ 16] _CU_run_all_tests
+0x1000079E2	0x0000000A	[ 16] _CU_run_suite
+0x1000079EC	0x0000000A	[ 16] _CU_run_test
+0x1000079F6	0x0000000A	[ 16] _CU_set_all_test_complete_handler
+0x100007A00	0x0000000A	[ 16] _CU_set_error
+0x100007A0A	0x0000000A	[ 16] _CU_set_test_complete_handler
+0x100007A14	0x0000000A	[ 16] _CU_set_test_start_handler
+0x100007A1E	0x0000000A	[ 17] _MPI_Abort
+0x100007A28	0x0000000A	[ 17] _MPI_Alltoall
+0x100007A32	0x0000000A	[ 17] _MPI_Barrier
+0x100007A3C	0x0000000A	[ 17] _MPI_Bcast
+0x100007A46	0x0000000A	[ 17] _MPI_Cart_create
+0x100007A50	0x0000000A	[ 17] _MPI_Comm_dup
+0x100007A5A	0x0000000A	[ 17] _MPI_Comm_free
+0x100007A64	0x0000000A	[ 17] _MPI_Comm_rank
+0x100007A6E	0x0000000A	[ 17] _MPI_Comm_size
+0x100007A78	0x0000000A	[ 17] _MPI_Dist_graph_create
+0x100007A82	0x0000000A	[ 17] _MPI_Dist_graph_create_adjacent
+0x100007A8C	0x0000000A	[ 17] _MPI_Dist_graph_neighbors
+0x100007A96	0x0000000A	[ 17] _MPI_Dist_graph_neighbors_count
+0x100007AA0	0x0000000A	[ 17] _MPI_Finalize
+0x100007AAA	0x0000000A	[ 17] _MPI_Gather
+0x100007AB4	0x0000000A	[ 17] _MPI_Get_count
+0x100007ABE	0x0000000A	[ 17] _MPI_Init
+0x100007AC8	0x0000000A	[ 17] _MPI_Irecv
+0x100007AD2	0x0000000A	[ 17] _MPI_Isend
+0x100007ADC	0x0000000A	[ 17] _MPI_Neighbor_allgather
+0x100007AE6	0x0000000A	[ 17] _MPI_Neighbor_allgatherv
+0x100007AF0	0x0000000A	[ 17] _MPI_Neighbor_alltoall
+0x100007AFA	0x0000000A	[ 17] _MPI_Neighbor_alltoallv
+0x100007B04	0x0000000A	[ 17] _MPI_Neighbor_alltoallw
+0x100007B0E	0x0000000A	[ 17] _MPI_Recv
+0x100007B18	0x0000000A	[ 17] _MPI_Reduce
+0x100007B22	0x0000000A	[ 17] _MPI_Send
+0x100007B2C	0x0000000A	[ 17] _MPI_Topo_test
+0x100007B36	0x0000000A	[ 17] _MPI_Type_size
+0x100007B40	0x0000000A	[ 17] _MPI_Waitall
+0x100007B4A	0x0000000A	[ 18] ___assert_rtn
+0x100007B54	0x0000000A	[ 18] ___sprintf_chk
+0x100007B5E	0x0000000A	[ 18] ___strcat_chk
+0x100007B68	0x0000000A	[ 18] _fprintf
+0x100007B72	0x0000000A	[ 18] _fputs
+0x100007B7C	0x0000000A	[ 18] _free
+0x100007B86	0x0000000A	[ 18] _fwrite
+0x100007B90	0x0000000A	[ 18] _malloc
+0x100007B9A	0x0000000A	[ 18] _memcmp
+0x100007BA4	0x0000000A	[ 18] _memcpy
+0x100007BAE	0x0000000A	[ 18] _memmove
+0x100007BB8	0x0000000A	[ 18] _memset
+0x100007BC2	0x0000000A	[ 18] _posix_memalign
+0x100007BCC	0x0000000A	[ 18] _printf
+0x100007BD6	0x0000000A	[ 18] _putchar
+0x100007BE0	0x0000000A	[ 18] _puts
+0x100007BEA	0x0000000A	[ 18] _rand
+0x100007BF4	0x0000000A	[ 18] _setvbuf
+0x100007BFE	0x0000000A	[ 18] _srand
+0x100007C08	0x0000000A	[ 18] _strncpy
+0x100007C12	0x0000000A	[ 18] _sysconf
+0x100007C20	0x00000001	[  2] literal string: 
+0x100007C21	0x0000000F	[  2] literal string: NULL != pSuite
+0x100007C30	0x00000015	[  2] literal string: src/cunit_mode.mpi.c
+0x100007C45	0x0000000E	[  2] literal string: NULL != pTest
+0x100007C53	0x0000001A	[  2] literal string: 
+    [%d] %d. %s:%u  - %s
+0x100007C6D	0x00000007	[  2] literal string: passed
+0x100007C74	0x00000007	[  2] literal string: FAILED
+0x100007C7B	0x00000016	[  2] literal string: NULL != pSuite->pName
+0x100007C91	0x00000015	[  2] literal string: NULL != pTest->pName
+0x100007CA8	0x00000021	[  2] literal string: 
+Suite %s, Test %s had failures:
+0x100007CC9	0x00000006	[  2] literal string: Suite
+0x100007CCF	0x00000008	[  2] literal string: 
+%s: %s
+0x100007CD7	0x00000005	[  2] literal string: Test
+0x100007CDC	0x0000000E	[  2] literal string: 
+  %s: %s ...
+0x100007CF0	0x00000030	[  2] literal string: FATAL ERROR - Test registry is not initialized.
+0x100007D20	0x00000006	[  2] literal string: 
+
+%s
+
+0x100007D26	0x0000001E	[  2] literal string: http://cunit.sourceforge.net/
+0x100007D48	0x00000032	[  2] literal string: CUnit - A unit testing framework for C - Version 
+0x100007D7A	0x00000019	[  2] literal string: 
+
+     %s2.1-2
+     %s
+
+
+0x100007D93	0x00000013	[  2] literal string: 
+  %d. %s:%u  - %s
+0x100007DA6	0x00000010	[  3] literal string: MPI Collectives
+0x100007DB6	0x0000000F	[  3] literal string: MPI Topologies
+0x100007DC5	0x00000019	[  3] literal string: MPI Neighbor Collectives
+0x100007DE1	0x00000014	[  4] literal string: src/suite_a2a.mpi.c
+0x100007DF8	0x00000040	[  4] literal string: memcmp(sendbuf, recvbuf, sdispls[numprocs]*sizeof(double)) == 0
+0x100007E38	0x00000040	[  4] literal string: memcmp(sendbuf, backbuf, sdispls[numprocs]*sizeof(double)) == 0
+0x100007E78	0x00000027	[  4] literal string: memcmp(sendbuf, backbuf, buf_len) == 0
+0x100007E9F	0x00000012	[  4] literal string: test_cr_alltoallv
+0x100007EB1	0x0000001B	[  4] literal string: test_cr_alltoallv_in_place
+0x100007ECC	0x00000013	[  4] literal string: test_cr_alltoallv2
+0x100007EDF	0x0000001C	[  4] literal string: test_cr_alltoallv2_in_place
+0x100007EFB	0x00000011	[  4] literal string: test_cr_alltoall
+0x100007F0C	0x00000013	[  4] literal string: test_mpi_alltoallv
+0x100007F1F	0x0000001C	[  4] literal string: test_mpi_alltoallv_in_place
+0x100007F3B	0x00000012	[  4] literal string: test_mpi_alltoall
+0x100007F51	0x00000019	[  5] literal string: src/suite_mpincoll.mpi.c
+0x100007F6A	0x0000001B	[  5] literal string: CU_ASSERT_EQUAL(ideg,odeg)
+0x100007F88	0x00000023	[  5] literal string: CU_ASSERT_EQUAL(odeg,deg_creation)
+0x100007FAB	0x00000019	[  5] literal string: CU_ASSERT_TRUE(weighted)
+0x100007FC8	0x00000033	[  5] literal string: memcmp(srcs, srcs_creation, odeg*sizeof(int)) == 0
+0x100008000	0x00000035	[  5] literal string: memcmp(dests, dests_creation, odeg*sizeof(int)) == 0
+0x100008038	0x00000023	[  5] literal string: CU_ASSERT_EQUAL(recvbuf[i],myrank)
+0x100008060	0x00000028	[  5] literal string: CU_ASSERT_EQUAL(sendbuf[i],recvbuf2[i])
+0x100008088	0x00000019	[  5] literal string: recvbuf[0] == 0xdeadbeef
+0x1000080A1	0x0000001C	[  5] literal string: check failed: (%s), line %d
+0x1000080BD	0x00000010	[  5] literal string: CU_FAIL(errmsg)
+0x1000080CD	0x00000018	[  5] literal string: recvbuf[0] == wrank - 1
+0x1000080E5	0x00000019	[  5] literal string: recvbuf[1] == 0xdeadbeef
+0x1000080FE	0x00000018	[  5] literal string: recvbuf[1] == wrank + 1
+0x100008116	0x00000018	[  5] literal string: recvbuf[1] == wrank - 1
+0x10000812E	0x00000018	[  5] literal string: recvbuf[0] == wrank + 1
+0x100008146	0x00000014	[  5] literal string: recvbuf[0] == wrank
+0x10000815A	0x0000001B	[  5] literal string: recvbuf[1] == -(wrank + 2)
+0x100008175	0x00000014	[  5] literal string: recvbuf[1] == wrank
+0x100008189	0x0000001B	[  5] literal string: recvbuf[0] == -(wrank + 2)
+0x1000081A4	0x00000011	[  5] literal string: found %d errors
+
+0x1000081B5	0x0000001E	[  5] literal string: test_mpi_neighbor_collectives
+0x1000081D3	0x0000001E	[  5] literal string: test_michs_neighbor_alltoallv
+0x1000081F1	0x00000018	[  6] literal string: src/suite_mpitopo.mpi.c
+0x100008210	0x00000027	[  6] literal string: CU_FAIL("topo_type != MPI_DIST_GRAPH")
+0x100008238	0x00000039	[  6] literal string: indegree does not match, expected=%d got=%d, layout='%s'
+0x100008278	0x0000003A	[  6] literal string: outdegree does not match, expected=%d got=%d, layout='%s'
+0x1000082B2	0x00000010	[  6] literal string: sources[j] >= 0
+0x1000082C2	0x00000012	[  6] literal string: sources[j] < size
+0x1000082D8	0x00000020	[  6] literal string: no edge from %d to %d specified
+0x1000082F8	0x00000034	[  6] literal string: incorrect weight for edge (%d,%d): %d instead of %d
+0x10000832C	0x00000015	[  6] literal string: destinations[j] >= 0
+0x100008341	0x00000017	[  6] literal string: destinations[j] < size
+0x100008358	0x0000002B	[  6] literal string: edge (%d,%d) has a weight %d instead of %d
+0x100008388	0x0000001F	[  6] literal string: CU_ASSERT_PTR_NOT_NULL(layout)
+0x1000083A8	0x00000022	[  6] literal string: CU_ASSERT_PTR_NOT_NULL(layout[i])
+0x1000083CA	0x0000001D	[  6] literal string: deterministic complete graph
+0x1000083E7	0x00000019	[  6] literal string: every other edge deleted
+0x100008400	0x00000010	[  6] literal string: only self-edges
+0x100008410	0x00000009	[  6] literal string: no edges
+0x100008419	0x0000001A	[  6] literal string: a random incomplete graph
+0x100008438	0x0000002D	[  6] literal string: CU_FAIL("MPI_UNWEIGHTED should not be NULL")
+0x100008468	0x0000003F	[  6] literal string: CU_FAIL("expected weighted == TRUE for the \"no graph\" case")
+0x1000084A8	0x00000057	[  6] literal string: CU_FAIL("expected weighted == TRUE for the \"no graph -- " "MPI_WEIGHTS_EMPTY\" case")
+0x100008500	0x0000004B	[  6] literal string: CU_FAIL("expected weighted == TRUE for the \"no graph -- " "NULLs\" case")
+0x100008550	0x0000005B	[  6] literal string: CU_FAIL("expected weighted == FALSE for the \"no graph -- " "NULLs+MPI_UNWEIGHTED\" case")
+0x1000085B0	0x00000033	[  6] literal string: CU_FAIL("MPI_Dist_graph_neighbors_count() fails!")
+0x1000085E8	0x0000003A	[  6] literal string: CU_FAIL("dgraph_comm is NOT created with MPI_UNWEIGHTED")
+0x100008628	0x0000004D	[  6] literal string: source or destination edge array is not of size %d.src_sz = %d, dest_sz = %d
+0x100008678	0x0000002D	[  6] literal string: CU_FAIL("MPI_Dist_graph_neighbors() fails!")
+0x1000086A8	0x0000002D	[  6] literal string: srcs[%d]=%d is NOT a neighbor of my rank %d.
+0x1000086D8	0x0000002E	[  6] literal string: dests[%d]=%d is NOT a neighbor of my rank %d.
+0x100008708	0x0000002A	[  6] literal string: CU_FAIL("MPI_Dist_graph_create() fails!")
+0x100008738	0x00000035	[  6] literal string: CU_FAIL("dgraph_comm is NOT of type MPI_DIST_GRAPH")
+0x100008770	0x00000052	[  6] literal string: CU_FAIL("MPI_Dist_graph_create() does NOT create " "a bidirectional ring graph!")
+0x1000087C8	0x00000033	[  6] literal string: CU_FAIL("MPI_Dist_graph_create_adjacent() fails!")
+0x100008800	0x0000005B	[  6] literal string: CU_FAIL("MPI_Dist_graph_create_adjacent() does NOT create " "a bidirectional ring graph!")
+0x10000885B	0x0000001B	[  6] literal string: test_mpi_dist_graph_create
+0x100008878	0x0000001F	[  6] literal string: test_mpi_dist_graph_unweighted
+0x100008898	0x00000013	[  7] literal string: Status Buffer: %p
+
+0x1000088B0	0x0000001F	[  7] literal string: ------------------------------
+0x1000088CF	0x00000018	[  7] literal string:  Buffer size:       %d
+
+0x1000088E7	0x00000018	[  7] literal string:  Stored bytes:      %d
+
+0x1000088FF	0x00000018	[  7] literal string:  Buffer start:      %p
+
+0x100008917	0x00000018	[  7] literal string:  Buffer insert pos: %p
+
+0x10000892F	0x00000008	[ 10] literal string: CURRENT
+0x100008937	0x00000004	[ 10] literal string: OLD
+0x10000893B	0x0000000A	[ 10] literal string: ndest: %d
+0x100008945	0x00000009	[ 10] literal string: 	src: %d
+0x10000894E	0x0000000C	[ 10] literal string: 	length: %d
+0x10000895A	0x0000000C	[ 10] literal string: 	status: %s
+0x100008966	0x00000007	[ 10] literal string: 	dest:
+0x10000896D	0x0000000B	[ 10] literal string:  content: 
+0x100008978	0x00000004	[ 10] literal string:  %d
+0x10000897C	0x00000004	[ 10] literal string: ...
+0x100008980	0x00000002	[ 10] literal string: -
+0x100008982	0x0000000C	[ 14] literal string: inchan == 1
+0x10000898E	0x00000010	[ 14] literal string: src/cread.mpi.c
+0x1000089A0	0x00000040	[  2] ___func__.8431
+0x1000089E0	0x00000021	[  2] ___func__.8422
+0x100008A08	0x00000008	[  4] 8-byte-literal
+0x100008A10	0x00000008	[  4] 8-byte-literal
+0x100008A18	0x00000008	[  6] 8-byte-literal
+0x100008A20	0x00000006	[ 14] ___func__.5936
+0x100008A26	0x00000007	[ 14] ___func__.5950
+0x100008A30	0x00000018	[  1] CIE
+0x100008A48	0x00000038	[  1] FDE for: _cunit_main
+0x100008A80	0x00000018	[  2] CIE
+0x100008A98	0x00000020	[  2] FDE for: _basic_all_tests_complete_message_handler
+0x100008AB8	0x00000048	[  2] FDE for: _basic_test_complete_message_handler
+0x100008B00	0x00000048	[  2] FDE for: _basic_test_start_message_handler
+0x100008B48	0x00000048	[  2] FDE for: _CU_mpi_run_tests
+0x100008B90	0x00000088	[  2] FDE for: _CU_basic_run_suite
+0x100008C18	0x00000048	[  2] FDE for: _CU_basic_run_test
+0x100008C60	0x00000020	[  2] FDE for: _CU_mpi_set_mode
+0x100008C80	0x00000020	[  2] FDE for: _CU_mpi_get_mode
+0x100008CA0	0x00000068	[  2] FDE for: _CU_basic_show_failures
+0x100008D08	0x00000018	[  3] CIE
+0x100008D20	0x00000020	[  3] FDE for: _main
+0x100008D40	0x00000018	[  4] CIE
+0x100008D58	0x00000020	[  4] FDE for: _test_cr_alltoall
+0x100008D78	0x00000090	[  4] FDE for: _test_alltoallv_in_place_impl
+0x100008E08	0x00000020	[  4] FDE for: _test_mpi_alltoallv_in_place
+0x100008E28	0x00000020	[  4] FDE for: _test_cr_alltoallv2_in_place
+0x100008E48	0x00000020	[  4] FDE for: _test_cr_alltoallv_in_place
+0x100008E68	0x00000090	[  4] FDE for: _test_alltoallv_impl
+0x100008EF8	0x00000020	[  4] FDE for: _test_mpi_alltoallv
+0x100008F18	0x00000020	[  4] FDE for: _test_cr_alltoallv2
+0x100008F38	0x00000020	[  4] FDE for: _test_cr_alltoallv
+0x100008F58	0x00000090	[  4] FDE for: _test_mpi_alltoall
+0x100008FE8	0x00000028	[  4] FDE for: _init_suite_mpi_coll
+0x100009010	0x00000020	[  4] FDE for: _cleanup_suite_mpi_coll
+0x100009030	0x00000018	[  5] CIE
+0x100009048	0x00000048	[  5] FDE for: _test_michs_neighbor_alltoallv
+0x100009090	0x00000058	[  5] FDE for: _test_mpi_neighbor_collectives
+0x1000090E8	0x00000028	[  5] FDE for: _init_suite_mpi_neighbor_coll
+0x100009110	0x00000020	[  5] FDE for: _cleanup_suite_mpi_neighbor_coll
+0x100009130	0x00000018	[  6] CIE
+0x100009148	0x00000090	[  6] FDE for: _verify_comm
+0x1000091D8	0x00000090	[  6] FDE for: _test_mpi_dist_graph_create
+0x100009268	0x00000070	[  6] FDE for: _validate_dgraph.part.0
+0x1000092D8	0x00000088	[  6] FDE for: _test_mpi_dist_graph_unweighted
+0x100009360	0x00000028	[  6] FDE for: _init_suite_mpi_topo
+0x100009388	0x00000020	[  6] FDE for: _cleanup_suite_mpi_topo
+0x1000093A8	0x00000018	[  7] CIE
+0x1000093C0	0x00000030	[  7] FDE for: _init_cr_buf
+0x1000093F0	0x00000020	[  7] FDE for: _sub_buffer
+0x100009410	0x00000040	[  7] FDE for: _add_to_buffer
+0x100009450	0x00000020	[  7] FDE for: _rescue_buf
+0x100009470	0x00000090	[  7] FDE for: _compress
+0x100009500	0x00000090	[  7] FDE for: _check_buffer
+0x100009590	0x00000090	[  7] FDE for: _get_message
+0x100009620	0x00000058	[  7] FDE for: _send_message
+0x100009678	0x00000030	[  7] FDE for: _print_buffer
+0x1000096A8	0x00000020	[  7] FDE for: _crb_data_len
+0x1000096C8	0x00000020	[  7] FDE for: _crb_data
+0x1000096E8	0x00000020	[  7] FDE for: _crb_clear
+0x100009708	0x00000070	[  7] FDE for: _crb_resize
+0x100009778	0x00000020	[  7] FDE for: _crb_create_msg
+0x100009798	0x00000030	[  7] FDE for: _crb_close_msg
+0x1000097C8	0x00000020	[  7] FDE for: _crb_add_recipient
+0x1000097E8	0x00000020	[  7] FDE for: _crb_add_recipients
+0x100009808	0x00000020	[  7] FDE for: _crb_add_msgcontent
+0x100009828	0x00000018	[  8] CIE
+0x100009840	0x00000088	[  8] FDE for: _read_msg_func
+0x1000098C8	0x00000028	[  8] FDE for: _write_msg_func
+0x1000098F0	0x00000090	[  8] FDE for: _Cr_Alltoallv
+0x100009980	0x00000090	[  8] FDE for: _Cr_Alltoallv2
+0x100009A10	0x00000018	[  9] CIE
+0x100009A28	0x00000028	[  9] FDE for: _Cr_Init
+0x100009A50	0x00000018	[ 10] CIE
+0x100009A68	0x00000070	[ 10] FDE for: _message_string
+0x100009AD8	0x00000020	[ 10] FDE for: _cr_msg_header
+0x100009AF8	0x00000020	[ 10] FDE for: _cr_msg_len
+0x100009B18	0x00000018	[ 11] CIE
+0x100009B30	0x00000040	[ 11] FDE for: _write_msg_func
+0x100009B70	0x00000088	[ 11] FDE for: _crystal_router
+0x100009BF8	0x00000048	[ 11] FDE for: _new_crystal_router
+0x100009C40	0x00000038	[ 11] FDE for: _del_crystal_router
+0x100009C78	0x00000020	[ 11] FDE for: _crb_buffer
+0x100009C98	0x00000018	[ 12] CIE
+0x100009CB0	0x00000020	[ 12] FDE for: _commcntxt_size
+0x100009CD0	0x00000020	[ 12] FDE for: _commcntxt_id
+0x100009CF0	0x00000050	[ 12] FDE for: _mcMPICommContext
+0x100009D40	0x00000020	[ 12] FDE for: _delMPICommContext
+0x100009D60	0x00000018	[ 13] CIE
+0x100009D78	0x00000058	[ 13] FDE for: _cshift
+0x100009DD0	0x00000050	[ 13] FDE for: _cishift
+0x100009E20	0x00000018	[ 14] CIE
+0x100009E38	0x00000038	[ 14] FDE for: _cread
+0x100009E70	0x00000098	[ 14] FDE for: _ciread
+0x100009F08	0x00000018	[ 15] CIE
+0x100009F20	0x00000050	[ 15] FDE for: _cwrite
+0x100009F70	0x00000088	[ 15] FDE for: _ciwrite
+0x10000A000	0x00000008	[  0] non-lazy-pointer-to-local: _Cr_Alltoallv
+0x10000A008	0x00000008	[  0] non-lazy-pointer-to-local: _Cr_Alltoallv2
+0x10000A010	0x00000008	[  0] non-lazy-pointer-to-local: _Crr
+0x10000A018	0x00000008	[  0] non-lazy-pointer-to-local: _MPI_Alltoallv
+0x10000A020	0x00000008	[  0] non-lazy-pointer-to-local: _MPI_UNWEIGHTED
+0x10000A028	0x00000008	[  0] non-lazy-pointer-to-local: _MPI_WEIGHTS_EMPTY
+0x10000A030	0x00000008	[  0] non-lazy-pointer-to-local: ___stderrp
+0x10000A038	0x00000008	[  0] non-lazy-pointer-to-local: ___stdoutp
+0x10000A040	0x00000008	[  0] non-lazy-pointer-to-local: dyld_stub_binder
+0x10000A048	0x00000008	[  0] non-lazy-pointer
+0x10000A050	0x00000008	[ 16] _CU_assertImplementation
+0x10000A058	0x00000008	[ 16] _CU_cleanup_registry
+0x10000A060	0x00000008	[ 16] _CU_get_error
+0x10000A068	0x00000008	[ 16] _CU_get_registry
+0x10000A070	0x00000008	[ 16] _CU_initialize_registry
+0x10000A078	0x00000008	[ 16] _CU_register_suites
+0x10000A080	0x00000008	[ 16] _CU_run_all_tests
+0x10000A088	0x00000008	[ 16] _CU_run_suite
+0x10000A090	0x00000008	[ 16] _CU_run_test
+0x10000A098	0x00000008	[ 16] _CU_set_all_test_complete_handler
+0x10000A0A0	0x00000008	[ 16] _CU_set_error
+0x10000A0A8	0x00000008	[ 16] _CU_set_test_complete_handler
+0x10000A0B0	0x00000008	[ 16] _CU_set_test_start_handler
+0x10000A0B8	0x00000008	[ 17] _MPI_Abort
+0x10000A0C0	0x00000008	[ 17] _MPI_Alltoall
+0x10000A0C8	0x00000008	[ 17] _MPI_Barrier
+0x10000A0D0	0x00000008	[ 17] _MPI_Bcast
+0x10000A0D8	0x00000008	[ 17] _MPI_Cart_create
+0x10000A0E0	0x00000008	[ 17] _MPI_Comm_dup
+0x10000A0E8	0x00000008	[ 17] _MPI_Comm_free
+0x10000A0F0	0x00000008	[ 17] _MPI_Comm_rank
+0x10000A0F8	0x00000008	[ 17] _MPI_Comm_size
+0x10000A100	0x00000008	[ 17] _MPI_Dist_graph_create
+0x10000A108	0x00000008	[ 17] _MPI_Dist_graph_create_adjacent
+0x10000A110	0x00000008	[ 17] _MPI_Dist_graph_neighbors
+0x10000A118	0x00000008	[ 17] _MPI_Dist_graph_neighbors_count
+0x10000A120	0x00000008	[ 17] _MPI_Finalize
+0x10000A128	0x00000008	[ 17] _MPI_Gather
+0x10000A130	0x00000008	[ 17] _MPI_Get_count
+0x10000A138	0x00000008	[ 17] _MPI_Init
+0x10000A140	0x00000008	[ 17] _MPI_Irecv
+0x10000A148	0x00000008	[ 17] _MPI_Isend
+0x10000A150	0x00000008	[ 17] _MPI_Neighbor_allgather
+0x10000A158	0x00000008	[ 17] _MPI_Neighbor_allgatherv
+0x10000A160	0x00000008	[ 17] _MPI_Neighbor_alltoall
+0x10000A168	0x00000008	[ 17] _MPI_Neighbor_alltoallv
+0x10000A170	0x00000008	[ 17] _MPI_Neighbor_alltoallw
+0x10000A178	0x00000008	[ 17] _MPI_Recv
+0x10000A180	0x00000008	[ 17] _MPI_Reduce
+0x10000A188	0x00000008	[ 17] _MPI_Send
+0x10000A190	0x00000008	[ 17] _MPI_Topo_test
+0x10000A198	0x00000008	[ 17] _MPI_Type_size
+0x10000A1A0	0x00000008	[ 17] _MPI_Waitall
+0x10000A1A8	0x00000008	[ 18] ___assert_rtn
+0x10000A1B0	0x00000008	[ 18] ___sprintf_chk
+0x10000A1B8	0x00000008	[ 18] ___strcat_chk
+0x10000A1C0	0x00000008	[ 18] _fprintf
+0x10000A1C8	0x00000008	[ 18] _fputs
+0x10000A1D0	0x00000008	[ 18] _free
+0x10000A1D8	0x00000008	[ 18] _fwrite
+0x10000A1E0	0x00000008	[ 18] _malloc
+0x10000A1E8	0x00000008	[ 18] _memcmp
+0x10000A1F0	0x00000008	[ 18] _memcpy
+0x10000A1F8	0x00000008	[ 18] _memmove
+0x10000A200	0x00000008	[ 18] _memset
+0x10000A208	0x00000008	[ 18] _posix_memalign
+0x10000A210	0x00000008	[ 18] _printf
+0x10000A218	0x00000008	[ 18] _putchar
+0x10000A220	0x00000008	[ 18] _puts
+0x10000A228	0x00000008	[ 18] _rand
+0x10000A230	0x00000008	[ 18] _setvbuf
+0x10000A238	0x00000008	[ 18] _srand
+0x10000A240	0x00000008	[ 18] _strncpy
+0x10000A248	0x00000008	[ 18] _sysconf
+0x10000A260	0x00000080	[  3] _mpi_suites
+0x10000A2E0	0x00000090	[  4] _tests_mpi_coll
+0x10000A380	0x00000030	[  5] _tests_mpi_neighbor_coll
+0x10000A3C0	0x00000030	[  6] _tests_mpi_topo
+0x10000A3F0	0x00000010	[  2] _f_run_mode
+0x10000A400	0x00000010	[  2] _numprocs
+0x10000A410	0x00000010	[  2] _myrank
+0x10000A420	0x00000008	[  2] _f_pRunningSuite
+0x10000A430	0x00000010	[  4] _numprocs
+0x10000A440	0x00000004	[  4] _myrank
+0x10000A450	0x00000004	[  5] _myrank
+0x10000A460	0x00000010	[  6] _size
+0x10000A470	0x00000010	[  6] _rank
+0x10000A480	0x00000008	[  6] _layout
+0x10000A4A0	0x00000100	[  6] _graph_layout_name
+0x10000A5A0	0x00000058	[  8] _Agv_parms
+0x10000A600	0x00000400	[ 10] _message.2305
+0x10000AA00	0x00000004	[  5] _numprocs
+0x10000AA04	0x00000004	[  6] _numprocs
+0x10000AA08	0x00000004	[  6] _myrank
+0x10000AA10	0x00000008	[  9] _Crr

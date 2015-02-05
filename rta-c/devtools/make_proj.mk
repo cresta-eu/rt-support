@@ -1,0 +1,109 @@
+#
+# Makefile for a library.
+#
+#
+
+# Include a personal makefile for customization. Don't add it to the official
+# repository! Therefore add the name to your .hgignore file or create it
+# outside of the source tree and define the path to it at the command line or
+# in the environment with the variable PROJ_MAKE_CUSTOMIZATION.
+
+PROJ_MAKE_CUSTOMIZATION ?= ../custom.mk
+-include $(PROJ_MAKE_CUSTOMIZATION)
+#
+# Possible variable definitions to customize the build:
+#
+# CFLAGS_USER   Options to modify the compilation
+# CPPFLAGS_USER
+# LDFLAGS_USER  Options to modify the link step
+# USER_OBJS	List of object files to link with the application.
+
+PRJ_LOC=src
+-include sources.mk
+
+### End of reading external files ###
+
+MPICC ?= mpicc
+MPICXX ?= mpicxx
+CC ?= gcc
+CXX ?= g++
+
+ifdef DEBUG
+MK_CONFIG ?= debug
+endif
+MK_CONFIG ?= release
+
+#Compiler options
+## General
+CFLAGS += -c -Wall -std=c99 -fmessage-length=0
+## Dependency files
+CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)"
+
+ifdef DEBUG
+CFLAGS += -O0 -g3 -DDEBUG_DEV=1
+else
+CFLAGS += -O3
+endif
+
+## General
+CPP_FLAGS += -c -Wall -ansi -fmessage-length=0
+## Dependency files
+CPP_FLAGS += -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)"
+
+ifdef DEBUG
+CPPFLAGS += -O0 -g3 -DDEBUG_DEV=1
+else
+CPPFLAGS += -O3
+endif
+
+INCLUDES += -Isrc -Iinc $(patsubst %, -I%/inc, $(REF_PROJECTS))
+INCLUDES += -I$(DEVLIBS)/include
+
+C_SRCS := $(patsubst %, $(PRJ_LOC)/%.c, $(C_MODULES))
+C_OBJS := $(patsubst %, $(MK_CONFIG)/$(PRJ_LOC)/%.o, $(C_MODULES))
+C_DEPS := $(patsubst %, $(MK_CONFIG)/$(PRJ_LOC)/%.d, $(C_MODULES))
+
+CPP_SRCS := $(patsubst %, $(PRJ_LOC)/%.cpp, $(CPP_MODULES))
+CPP_OBJS := $(patsubst %, $(MK_CONFIG)/$(PRJ_LOC)/%.o, $(CPP_MODULES))
+CPP_DEPS := $(patsubst %, $(MK_CONFIG)/$(PRJ_LOC)/%.d, $(CPP_MODULES))
+
+REF_LIBS ?= $(foreach R_LIB, $(REF_PROJECTS), \
+             $(R_LIB)/$(MK_CONFIG)/lib$(notdir $(R_LIB)).a)
+LDREF_LIBS := $(addprefix -l, \
+                  $(patsubst lib%, %, $(notdir $(basename $(REF_LIBS)))))
+LDREF_DIRS := $(addprefix -L, $(patsubst %/, %, $(dir $(REF_LIBS))))
+LDREF_DIRS := $(LDREF_DIRS) -L$(DEVLIBS)/lib
+
+LIBES = $(LDREF_DIRS) $(LDREF_LIBS) $(EXT_LIBS)
+
+ifeq ($(OS),Darwin)
+  LDFLAGS += -Wl,-map,$@.map
+else
+  LDFLAGS += -Wl,-Map,$@.map
+endif
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+endif
+
+OBJS = $(CPP_OBJS) $(C_OBJS) $(USER_OBJS)
+
+# Rules
+
+$(MK_CONFIG)/$(PRJ_LOC)/%.mpi.o : $(PRJ_LOC)/%.mpi.c
+	$(MPICC) $(CFLAGS) $(INCLUDES) $($(*F)_CFLAGS) $(CFLAGS_USER) $(MPICFLAGS_USER) -o"$@" "$<"
+
+$(MK_CONFIG)/$(PRJ_LOC)/%.mpi.o : $(PRJ_LOC)/%.mpi.cpp
+	$(MPICXX) $(CPP_FLAGS) $(INCLUDES) $($(*F)_CPPFLAGS) $(CPPFLAGS_USER) $(MPICPPFLAGS_USER) -o"$@" "$<"
+
+$(MK_CONFIG)/$(PRJ_LOC)/%.o : $(PRJ_LOC)/%.c
+	$(CC) $(CFLAGS) $(INCLUDES) $($(*F)_CFLAGS) $(CFLAGS_USER) -o"$@" "$<"
+
+$(MK_CONFIG)/$(PRJ_LOC)/%.o : $(PRJ_LOC)/%.cpp
+	$(CXX) $(CPP_FLAGS) $(INCLUDES) $($(*F)_CPPFLAGS) $(CPPFLAGS_USER) -o"$@" "$<"
+

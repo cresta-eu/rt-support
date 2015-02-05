@@ -1,0 +1,27 @@
+Installation instructions
+=========================
+
+Getting started (for the impatient)
+-----------------------------------
+
+1: cd <the-root-of-mampicl>
+
+# Make configuration files available...
+2: ln -s _conf/def.custom.mk custom.mk
+3: ln -s _conf/def.gitignore .gitignore
+
+# Create irectories for build...
+4: mkdir -p {commprim,crystal,cunit}/{release,debug}/src
+
+# Build the library...
+5: cd cunit/
+6: make
+# Test f.ex. with...
+7: mpiexec -n 4 release/test_mampicl
+
+A few additional words
+----------------------
+
+The directory '_conf' contains example files needed to build the library.
+The easiest way to provide the configuration files is to use links to one
+of the examples (see commands (2,3) in the section 'Getting started' above.

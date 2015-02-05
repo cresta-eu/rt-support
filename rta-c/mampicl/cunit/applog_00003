@@ -1,0 +1,560 @@
+[applog_00003] DEBUG    00003 - log_init(): Initialization done.
+
+[applog_00003] TRACE    00003 - test_cr_alltoallv() -- begin
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1688	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 256	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1040	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 256	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5a910, 314562288, 1, 35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - ciread(22f5a910, 314562288, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314562288 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1688	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5a3d8, 314563624, 2, 35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - ciread(22f5a3d8, 314563624, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314563624 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1040	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 256	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 1	length: 1688	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 0	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1688	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 256	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1040	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 256	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5a910, 314562288, 1, 35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - ciread(22f5a910, 314562288, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314562288 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1688	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5a3d8, 314563624, 2, 35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - ciread(22f5a3d8, 314563624, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314563624 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1040	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 256	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 1	length: 1688	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 0	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv_in_place() -- begin
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5f4b0, 314542928, 1, 35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - ciread(22f5f4b0, 314542928, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314542928 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 2160	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5a5b0, 314563152, 2, 35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - ciread(22f5a5b0, 314563152, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314563152 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 1	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 0	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5f4b0, 314542928, 1, 35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - ciread(22f5f4b0, 314542928, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314542928 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 2160	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f5a5b0, 314563152, 2, 35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - ciread(22f5a5b0, 314563152, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314563152 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 1	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 0	length: 7448	status: CURRENT	dest: 3 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv_in_place() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv2() -- begin
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 256	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f58000, 314572800, 1, 35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - ciread(22f58000, 314572800, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314572800 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1688	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f59d2c, 314565332, 2, 35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - ciread(22f59d2c, 314565332, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314565332 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 256	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f58000, 314572800, 1, 35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 7744, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - ciread(22f58000, 314572800, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314572800 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 7744 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 1688	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f59d2c, 314565332, 2, 35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9176, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - ciread(22f59d2c, 314565332, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314565332 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9176 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv2() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv2_in_place() -- begin
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f58000, 314572800, 1, 35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - ciread(22f58000, 314572800, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314572800 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 2160	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f58884, 314570620, 2, 35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - ciread(22f58884, 314570620, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314570620 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - crystal_router(c2c1aab0) -- begin
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- begin: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 0
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 0 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 2 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f58000, 314572800, 1, 35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 14936, 1, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 1 => sending to 2
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - ciread(22f58000, 314572800, 1, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 1 => receiving from 2
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314572800 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 -   crystal_router():	dimension 1
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - check_buffer() -- begin
+[applog_00003] TRACE    00003 - check_buffer() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 3	length: 7448	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - 	mail: ndest: 1	src: 2	length: 2160	status: CURRENT	dest: 1 content: ...
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() - send buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - cishift(22f58884, 314570620, 2, 35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciwrite(35b58000, 9648, 2, comm) @ 3(4) -- begin
+[applog_00003] DEBUG    00003 - ciwrite(): bit 2 => sending to 1
+[applog_00003] TRACE    00003 - ciwrite() @ 3(4) ==> 9648 -- end
+[applog_00003] TRACE    00003 - ciread(22f58884, 314570620, 2, 0, comm) @ 3(4) -- begin
+[applog_00003] TRACE    00003 - ciread(): channel mask 2 => receiving from 1
+[applog_00003] TRACE    00003 - ciread() @ 3(4) ==> 314570620 -- end
+[applog_00003] TRACE    00003 - cishift() @ 3(4) ==> 14936 -- end
+[applog_00003] TRACE    00003 - copy_to_buf() -- begin
+[applog_00003] TRACE    00003 - copy_to_buf() -- end
+[applog_00003] TRACE    00003 - compress() -- begin
+[applog_00003] TRACE    00003 - compress() -- end
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: output buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - BEGIN -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - END -- BUFFER DUMP: crystal_router() -- end: input buffer
+[applog_00003] TRACE    00003 - -------------------
+[applog_00003] TRACE    00003 - crystal_router() -- end
+[applog_00003] TRACE    00003 - test_cr_alltoallv2_in_place() -- end
+[applog_00003] TRACE    00003 - test_mpi_alltoallv() -- begin
+[applog_00003] TRACE    00003 - test_mpi_alltoallv() -- end
+[applog_00003] TRACE    00003 - test_mpi_alltoallv_in_place() -- begin
+[applog_00003] TRACE    00003 - test_mpi_alltoallv_in_place() -- end
+[applog_00003] TRACE    00003 - test_mpi_alltoall() -- begin
+[applog_00003] TRACE    00003 - test_mpi_alltoall() -- end
